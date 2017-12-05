@@ -105,4 +105,4 @@ function func( a, b, c = 1) {   // default present
 
 func( 1, 2);      // 1, 2
 
-/* NOTE in the last three examples the las value of the vars a, b, arguments[0]... are showed to the previos values
+/* NOTE in the last three examples the las value of the vars a, b, arguments[0]... are showed to the previos values*/

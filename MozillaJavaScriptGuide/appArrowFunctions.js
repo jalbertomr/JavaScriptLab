@@ -30,7 +30,12 @@ param => ( { foo: bar })
   var f = ( [a, b] = [ 1, 2], { x: c } = { x: a + b} ) => { a + b + c}
   f();  // 6
 
+new version
+  let f = ( [a, b] = [1, 2], { x: c } = { x: a + b } ) =>  a + b + c ;
+  f();  // 6
+
+
 */
 
-var f = ( [a, b] = [1, 2], { x: c = x: b + c } ) => { a + b + c };
-f();
+let f = ( [a, b] = [1, 2], { x: c } = { x: a + b } ) =>  a + b + c ;
+console.log(f());

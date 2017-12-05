@@ -62,7 +62,7 @@ var makeIterator = function( array ) {
 
 var it = makeIterator( [1,2,3,4,5,6,7,8,9] );
 
-var doubles = [ for( i of it) i * 2];
+var doubles = [for ( i in it) i * 2];
 
 //var it2 = (for (i in it));
 //console.log(it2.next());  // first element doubled
