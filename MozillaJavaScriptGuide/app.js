@@ -19,7 +19,7 @@ function testPromise() {
     log.insertAdjacentHTML('beforeend', thisPromiseCount + ') Started (<small>Sync code started</small>)</br>');
 
     // we make a new promise: we promise a numeric count of this promise, starting from 1 (after waiting 3s)
-    var p1 = new Promise( 
+    var p1 = new Promise(
         (resolve, reject) => {
         // The resolver function is called with the ability to resolve or reject the promise
         log.insertAdjacentHTML('beforeend', thisPromiseCount +
